@@ -1,16 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Page</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<!--Below is the Id selector-->
-<p  style="background-color: red;" class="main" >this is a new p tag</p>
-<div  class="main1">this is main</div>
-    
-</body>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .parentDiv {
+      display: flex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: #abcdef;
+    }
+
+    .blockDetails {
+      padding: 10px 30px 10px 30px;
+      text-align: left;
+    }
+
+    form {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width: 350px;
+      height: 330px;
+      padding-top: 40px;
+      background: linear-gradient(to right, #267871, #136a8a);
+      border-radius: 10px;
+    }
+
+    input {
+      width: 95%;
+      border-color: gray;
+      height: 23px;
+      border: none;
+      border-bottom: 2px solid white;
+      margin-top: 5px;
+      border-radius: 10px;
+    }
+
+    label {
+      color: white;
+    }
+  </style>
+
+  <body>
+    <div class="parentDiv">
+      <form action="" style="margin: auto">
+        <div class="blockDetails">
+          <label for="email">Email</label>
+          <br />
+          <input type="email" id="email" />
+        </div>
+
+        <div class="blockDetails">
+          <label for="password">Password</label>
+          <br />
+          <input type="password" id="password" />
+        </div>
+
+        <div class="blockDetails">
+          <label for="firstname">First Name</label>
+          <br />
+          <input type="text" id="firstname" id="" />
+        </div>
+
+        <div class="blockDetails">
+          <label for="lasttname">Last Name</label>
+          <br />
+          <input type="text" id="lasttname" id="" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
