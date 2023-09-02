@@ -1,0 +1,26 @@
+body {
+  background-color: crimson;
+}
+
+.box {
+  padding: 60px 0px;
+}
+
+.box-part {
+  background-color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 60px 10px;
+}
+
+i {
+  color: rgb(0, 149, 255);
+}
+
+a {
+  border-bottom: 2px solid rgb(0, 149, 255);
+}
+
+p {
+  padding-top: 10px;
+}

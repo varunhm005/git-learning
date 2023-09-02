@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .overallStyles {
+      background-color: #ffffdd;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      border: 1px solid black;
+    }
+    .topHeadStyles {
+      background-color: #8b1f1f;
+      color: white;
+      text-align: center;
+    }
+    .topHeadStyles > span {
+      display: block;
+    }
+    u {
+      color: #c45b12;
+    }
+    .flex-container {
+      display: flex;
+      border-bottom: 1px solid black;
+    }
+    #checkField {
+      padding: 10px;
+      border-right: 1px solid black;
+    }
+    #withCheckField {
+      border-right: 1px solid black;
+    }
+    .padding-styles {
+      padding-left: 50px;
+    }
+    .blueColor {
+      color: #585af1;
+    }
+  </style>
+  <body>
+    <section class="overallStyles">
+      <div class="topHeadStyles">
+        <span
+          >Request For New PAN Card Or/And Changes Or Correction In PAN
+          Data</span
+        >
+        <span
+          ><i
+            >Fields marked with * (asterisk) are mandatory. To avoid
+            mistakes(s), please refer <u>guidelines</u> and
+            <u>instructions</u></i
+          ></span
+        >
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          * Whether citizen of India
+          <span class="padding-styles"
+            >Yes<input type="radio" name="" id=""
+          /></span>
+          <span class="padding-styles"
+            >No<input type="radio" name="" id=""
+          /></span>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          * Permanent Account Number (PAN) <input type="text" name="" id="" />
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="withCheckField"><input type="checkbox" /></div>
+        <div>* 1.Name</div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          Title
+          <span class="padding-styles"
+            >Shri/Mr <input type="checkbox" name="" id="" />
+          </span>
+          <span class="padding-styles"
+            >Smt/Mrs <input type="checkbox" name="" id="" />
+          </span>
+          <span class="padding-styles"
+            >Kumari/Ms <input type="checkbox" name="" id="" />
+          </span>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          Last Name/Surname <br />
+          <input type="test" name="" id="" />
+        </div>
+        <div class="padding-styles">
+          First Name <br />
+          <input type="test" name="" id="" />
+        </div>
+        <div class="padding-styles">
+          Middle Name <br />
+          <input type="test" name="" id="" />
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          * Name as you would like it printed on the card
+          <span class="blueColor"
+            >(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s,
+            Alias etc, are not allowed)</span
+          >
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          <input type="text" name="" id="" />
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          Details of Parents
+          <span class="blueColor"
+            >(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s,
+            Alias etc, are not allowed)</span
+          >
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div style="width: 40%; border-right: 1px solid black">
+          When mother is single parent and you wish to apply for PAN by
+          furnishing the name of your mother only
+        </div>
+        <div>
+          <span>Yes <input type="checkbox" name="" id="" /></span>
+          <span>No <input type="checkbox" name="" id="" /></span>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="withCheckField"><input type="checkbox" /></div>
+        <div>
+          * Father's Name
+          <span class="blueColor"
+            >(Mandatory field, Even married women should give father's name
+            only.)</span
+          >
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          Last Name/Surname <br />
+          <input type="test" name="" id="" />
+        </div>
+        <div class="padding-styles">
+          First Name <br />
+          <input type="test" name="" id="" />
+        </div>
+        <div class="padding-styles">
+          Middle Name <br />
+          <input type="test" name="" id="" />
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="withCheckField"><input type="checkbox" /></div>
+        <div>
+          <span class="blueColor">Mother's Name(This field is optional)</span>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="checkField"></div>
+        <div>
+          Last Name/Surname <br />
+          <input type="test" name="" id="" />
+        </div>
+        <div class="padding-styles">
+          First Name <br />
+          <input type="test" name="" id="" />
+        </div>
+        <div class="padding-styles">
+          Middle Name <br />
+          <input type="test" name="" id="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
