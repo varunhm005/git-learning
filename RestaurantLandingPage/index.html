@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-3" id="icon">Hot meals</div>
+        <div class="col-md-6" id="deliverField">
+          <span class="bold">Deliver to:</span>
+          <i class="fa fa-map-marker color" aria-hidden="true"></i> Current
+          Location <span class="bold">Ashok Nagar, 600013</span>
+        </div>
+        <div class="col-md-3 bold searchFoodField">
+          <i class="fa fa-search color" aria-hidden="true"></i> Search Food
+          <button type="button" class="btn btn-outline-warning loginButton">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-warning p-5">
+      <div class="row lookMeals">
+        <div class="col-md-7 lookMealsLeft">
+          <h1 class="text-white qwigley font50">Look at your meals</h1>
+          <p>within a few clicks, find meals that are accessible near you</p>
+          <div class="bg-white p-3">
+            <button type="button" class="btn deliveryButton">
+              <i class="fa fa-motorcycle" aria-hidden="true"></i> Delivery
+            </button>
+            <button type="button" class="btn text-secondary pickupButton">
+              <i class="fa fa-suitcase" aria-hidden="true"></i> Pickup
+            </button>
+
+            <div class="row pt-5">
+              <div class="col-md-9">
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">
+                      <i
+                        class="fa fa-map-marker secondLocation"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Your Address"
+                    aria-label="Username"
+                    aria-describedby="addon-wrapping"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <button type="button" class="findFoodButton">
+                  <i class="fa fa-search" aria-hidden="true"></i> Find Food
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 lookMealsRight">
+          <img src="./images/pngegg 1.png" alt="" width="80%" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="card-deck">
+        <div class="card">
+          <img src="./images/Image.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Vada</h5>
+            <span class="foodBox">30 min Delivery</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/Image (1).png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Idli</h5>
+            <span class="foodBox">30 min Delivery</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/Image (2).png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Parotta</h5>
+            <span class="foodBox">30 min Delivery</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/Image (3).png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Kichadi</h5>
+            <span class="foodBox">30 min Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center pt-5 pb-5">
+      <h5 class="worksColor pb-3">How does it work</h5>
+      <div class="row pt-5 pb-5 workSection">
+        <div class="col-md-3">
+          <img
+            src="./images/Icon (1).png"
+            alt=""
+            class="d-inline"
+            width="25%"
+          />
+          <h5 class="d-inline-block worksStyles text-left pl-2">
+            Daily <br />
+            Discounts
+          </h5>
+        </div>
+        <div class="col-md-1">
+          <img src="./images/HR.png" alt="" width="1px" />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="./images/Icon (2).png"
+            alt=""
+            class="d-inline"
+            width="25%"
+          />
+          <h5 class="d-inline-block worksStyles text-left pl-2">
+            Live <br />
+            Tracing
+          </h5>
+        </div>
+        <div class="col-md-1">
+          <img src="./images/HR.png" alt="" width="1px" />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="./images/Icon (3).png"
+            alt=""
+            class="d-inline"
+            width="25%"
+          />
+          <h5 class="d-inline-block worksStyles text-left pl-2">
+            Quick <br />
+            Delivery
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid searchField pt-5 pb-5">
+      <h5>Search by Food</h5>
+      <div class="row pt-5">
+        <div class="col-md-2 searchFieldImg">
+          <img src="./images/dosa.png" alt="" />
+          <p>Dosa</p>
+        </div>
+        <div class="col-md-2 searchFieldImg">
+          <img src="./images/appam.png" alt="" />
+          <p>Aappam</p>
+        </div>
+        <div class="col-md-2 searchFieldImg">
+          <img src="./images/puttu.png" alt="" />
+          <p>Puttu</p>
+        </div>
+        <div class="col-md-2 searchFieldImg">
+          <img src="./images/idiyappam.png" alt="" />
+          <p>Idiyappam</p>
+        </div>
+        <div class="col-md-2 searchFieldImg">
+          <img src="./images/pongal.png" alt="" />
+          <p>Pongal</p>
+        </div>
+        <div class="col-md-2 searchFieldImg">
+          <img src="./images/veg rice.png" alt="" />
+          <p>Veg Rice</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bestDealsField">
+      <div class="row">
+        <div class="col-md-3 bestDealsLeft">
+          <h5>
+            Best deals
+            <span id="diffColor">
+              Crispy <br />
+              Diffen
+            </span>
+          </h5>
+          <p>
+            Enjoy the large size of Dosa. Complete <br />
+            perfect slice of Dosa.
+          </p>
+          <button class="btn bestDealsButton">
+            PROCEED TO ORDER
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-9">
+          <img src="./images/bestDealsImage.png" alt="" width="98%" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid popular-field">
+      <h5 class="text-center font-weight-bold">Popular items</h5>
+
+      <div class="row row-cols-1 row-cols-md-1 firstRow">
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 336.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Murukku</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 336 (1).png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Paniyaram</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 336 (2).png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Seeval Murukku</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 336 (3).png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Mixture</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 336 (4).png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Veg Soup</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 secondRow">
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 339.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Gulab Jamun</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 340.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Porivellangai Urundai</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 341.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Jangri</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 342.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Lattu</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Rectangle 343.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body popular-field-body">
+              <h5 class="card-title">Halwa</h5>
+              <button class="btn popularButton">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footerField">
+      <div class="row footerRow">
+        <div class="col-md-2">
+          <div class="footerHead">Company</div>
+          <div class="footerPara">About Us</div>
+          <div class="footerPara">Team</div>
+          <div class="footerPara">Careers</div>
+          <div class="footerPara">Blog</div>
+        </div>
+        <div class="col-md-2">
+          <div class="footerHead">Contact</div>
+          <div class="footerPara">About Us</div>
+          <div class="footerPara">Team</div>
+          <div class="footerPara">Careers</div>
+          <div class="footerPara">Blog</div>
+        </div>
+        <div class="col-md-2">
+          <div class="footerHead">Legal</div>
+          <div class="footerPara">Terms & Conditions</div>
+          <div class="footerPara">Refund & Cancellation</div>
+          <div class="footerPara">Privacy Policy</div>
+          <div class="footerPara">Cookie Policy</div>
+        </div>
+        <div class="col-md-6 footerEnd">
+          <div>FOLLOW US</div>
+          <div class="footerDiv">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="footerDiv">Receive exclusive offers in your mailbox</div>
+          <div class="row footerDiv">
+            <div class="col-md-9">
+              <div class="input-group flex-nowrap footerInputs">
+                <div class="input-group-prepend">
+                  <span
+                    class="input-group-text footerIcon"
+                    id="addon-wrapping "
+                  >
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+            </div>
+
+            <button class="btn footerButton">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyRightField">
+        <div id="copyLeft">
+          All rights Reserved <i class="fa fa-copyright" aria-hidden="true"></i>
+        </div>
+        <div id="copyRight">
+          Made with <i class="fa fa-heart heartColor" aria-hidden="true"></i> by
+          Athi
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
