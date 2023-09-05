@@ -92,6 +92,10 @@
   padding: 55px 220px;
 }
 
+.itemsField {
+  padding: 55px 220px;
+}
+
 .card {
   border: none !important;
 }
@@ -153,7 +157,7 @@
 
 .searchFieldImg > img {
   width: 100%;
-  border-radius: 90px;
+  border-radius: 180px;
 }
 
 .bestDealsButton {
@@ -300,4 +304,269 @@
 .copyRightField {
   display: flex;
   justify-content: space-between;
+}
+
+/* @media only screen and (min-width: 992px) {
+  .card-deck {
+    padding: 55px 0px;
+  }
+  .itemsField {
+    padding: 55px 220px;
+  }
+  .searchField {
+    background-color: #f6f5ee;
+    padding: 0px 20px !important;
+  }
+
+  .bestDealsField {
+    padding: 80px 20px 80px 40px !important;
+  }
+
+  .popular-field {
+    padding: 0px 20px !important;
+  }
+
+  .footerField {
+    padding: 70px 20px !important;
+    background-color: black;
+    color: white;
+  }
+
+  .lookMealsLeft {
+    padding: 0px 0px !important;
+  }
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-deck {
+    padding: 55px 0px;
+  }
+  .itemsField {
+    padding: 55px 0px;
+  }
+  .searchField {
+    background-color: #f6f5ee;
+    padding: 0px 20px !important;
+  }
+
+  .bestDealsField {
+    padding: 80px 20px 80px 40px !important;
+  }
+
+  .popular-field {
+    padding: 0px 20px !important;
+  }
+
+  .footerField {
+    padding: 70px 20px !important;
+    background-color: black;
+    color: white;
+  }
+
+  .lookMealsLeft {
+    padding: 0px 0px !important;
+  }
+
+  #icon {
+    font-family: Qwigley;
+    color: #ffb30e;
+    font-size: 33px;
+    padding-left: 30px;
+  }
+
+  #deliverField {
+    padding-left: 30px;
+    font-size: 10px;
+  }
+
+  .searchFoodField {
+    font-size: 10px;
+  }
+
+  .loginButton {
+    margin-left: 20px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .card-deck {
+    padding: 55px 0px;
+  }
+  .itemsField {
+    padding: 55px 0px;
+  }
+  .searchField {
+    background-color: #f6f5ee;
+    padding: 0px 20px !important;
+  }
+
+  .bestDealsField {
+    padding: 80px 20px 80px 40px !important;
+  }
+
+  .popular-field {
+    padding: 0px 20px !important;
+  }
+
+  .footerField {
+    padding: 70px 20px !important;
+    background-color: black;
+    color: white;
+  }
+
+  .lookMealsLeft {
+    padding: 0px 0px !important;
+  }
+
+  #icon {
+    font-family: Qwigley;
+    color: #ffb30e;
+    font-size: 33px;
+    padding-left: 30px;
+  }
+
+  #deliverField {
+    padding-left: 30px;
+    font-size: 10px;
+  }
+
+  .searchFoodField {
+    font-size: 10px;
+  }
+
+  .loginButton {
+    margin-left: 20px !important;
+    font-size: 10px !important;
+  }
+
+  .card-body {
+    padding: 0px !important;
+  }
+
+  .card-body h5 {
+    padding-top: 10px !important;
+  }
+
+  .findFoodButton {
+    padding: 10px 5px 10px 5px;
+    font-size: 11px;
+  }
+
+  .workSection {
+    margin: 0px 20px !important;
+  }
+
+  .bestDealsLeft {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footerField {
+    padding: 70px 20px !important;
+    background-color: black;
+    color: white;
+  }
+
+  .searchFoodField {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+  }
+
+  #icon {
+    font-family: Qwigley;
+    color: #ffb30e;
+    font-size: 50px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .itemsField {
+    padding: 55px 0px;
+  }
+
+  .itemsField h5 {
+    text-align: center;
+  }
+
+  .itemsField span {
+    margin-left: 30%;
+  }
+
+  .workSection {
+    margin: 0px 20px !important;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 5px 27px 11px rgba(255, 181, 21, 0.1);
+  }
+
+  .workSection > .col-md-1 {
+    display: none;
+  }
+
+  .workSection > .col-md-3 {
+    padding-bottom: 15%;
+  }
+  .searchField {
+    padding: 0px 20px !important;
+  }
+
+  .searchField h5 {
+    text-align: center;
+  }
+
+  .searchFieldImg > img {
+    width: 60%;
+    border-radius: 180px;
+    margin-left: 20%;
+  }
+
+  .bestDealsField {
+    padding: 10px 20px 80px 20px !important;
+  }
+
+  .bestDealsLeft {
+    text-align: center;
+  }
+
+  .bestDealsButton {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  .popular-field {
+    padding: 0px 20px !important;
+  }
+
+  .col {
+    max-width: 100% !important;
+  }
+
+  .popularButton {
+    margin-bottom: 20px;
+  }
+  .footerEnd {
+    padding-top: 20px;
+  }
+  .footerHead {
+    padding-bottom: 0px;
+    padding-top: 30px;
+  }
+
+  .footerButton {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  #res-style {
+    padding-top: 10px !important;
+  }
+
+  .findFoodButton {
+    margin-top: 10px;
+  }
+  .lookMealsLeft {
+    padding: 0px 20px !important;
+  }
 }
