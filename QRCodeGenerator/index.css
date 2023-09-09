@@ -1,0 +1,46 @@
+.qrColor,
+.backColor {
+  display: inline !important;
+  width: 150px !important;
+}
+
+.buttonGroup > button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.col-md-6 {
+  max-width: fit-content;
+}
+
+h1 {
+  text-align: center;
+}
+
+.alertParent {
+  position: absolute;
+  padding-top: 10px;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+}
+
+#alertMessage {
+  display: none;
+  position: relative;
+}
+
+form {
+  padding-top: 40px !important;
+}
+
+@media only screen and (max-width: 320px) {
+  #alertMessage {
+    display: none;
+    position: relative;
+    margin: 0;
+    padding: 5px;
+    top: 15px;
+  }
+}

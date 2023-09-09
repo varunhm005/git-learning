@@ -1,0 +1,191 @@
+.header-image {
+  /* filter: brightness(50%); */
+  background-image: url("./Images/chicken-wings\(1\).jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: fit-content;
+}
+
+.header-image h1 {
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.searchButton {
+  background-color: orangered !important;
+  border: none !important;
+  color: white !important;
+  margin-left: 10px !important;
+  padding: 0px 10px !important;
+}
+
+.input {
+  width: 45% !important;
+  margin-left: 25% !important;
+  border-top-right-radius: 10px !important;
+}
+
+.input > input {
+  border-radius: 5px !important;
+}
+
+.imageDiv {
+  padding: 30px 15px 0px 15px;
+}
+
+.cardWidth {
+  padding: 0px 120px;
+}
+
+#add_to_me {
+  padding-top: 13% !important;
+  padding-bottom: 8% !important;
+}
+
+.card {
+  border-radius: 0px !important;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body button {
+  padding: 5px 10px;
+}
+.header-contents {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 22%;
+
+  background-image: url("./Images/chicken-wings\(1\).jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: fit-content;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+}
+
+.alertParent {
+  position: absolute;
+  padding-top: 10px;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+}
+
+#alertMessage {
+  display: none;
+  position: relative;
+}
+
+/* .header-contents > div {
+  position: fixed;
+  z-index: 1;
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #add_to_me {
+    padding-top: 20% !important;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .input {
+    width: 55% !important;
+  }
+  #alertMessage {
+    top: 55px;
+    right: 70px !important;
+    padding: 0px 10px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .input {
+    width: 80% !important;
+  }
+  .cardWidth {
+    padding: 0px 20px;
+  }
+  #add_to_me {
+    padding-top: 40% !important;
+  }
+  .input {
+    margin-left: 10% !important;
+  }
+
+  .col {
+    margin-left: 10px !important;
+  }
+
+  #alertMessage {
+    top: 55px;
+    right: 63px !important;
+    padding: 0px 10px !important;
+  }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 420px) {
+  .input {
+    width: 80% !important;
+  }
+  .cardWidth {
+    padding: 0px 20px;
+  }
+  #add_to_me {
+    padding-top: 40% !important;
+  }
+  .input {
+    margin-left: 10% !important;
+  }
+
+  .col {
+    margin-left: 10px !important;
+  }
+
+  #alertMessage {
+    top: 55px;
+    right: 90px !important;
+    padding: 0px 10px !important;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 480px) {
+  .input {
+    width: 80% !important;
+  }
+  .cardWidth {
+    padding: 0px 20px;
+  }
+  #add_to_me {
+    padding-top: 40% !important;
+  }
+  .input {
+    margin-left: 10% !important;
+  }
+
+  .col {
+    margin-left: 10px !important;
+  }
+
+  #alertMessage {
+    top: 55px;
+    right: 115px !important;
+    padding: 0px 10px !important;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  .input > input {
+    height: 50px !important;
+  }
+}

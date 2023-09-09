@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>QR Code Generator</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="alertParent">
+            <div
+              class="alert alert-danger"
+              role="alert"
+              id="alertMessage"
+            ></div>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Enter the Data:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="data"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Width:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="width"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Height:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="Height"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">QR Color:</label>
+              <input
+                type="color"
+                class="form-control qrColor"
+                id="qrColor"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Background Color:</label>
+              <input
+                type="color"
+                class="form-control backColor"
+                id="backColor"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Format</div>
+                </div>
+                <select class="custom-select mr-sm-2" id="format" required>
+                  <option value="png" selected>PNG</option>
+                  <option value="gif">GIF</option>
+                  <option value="jpeg">JPEG</option>
+                  <option value="jpg">Three</option>
+                  <option value="svg">SVG</option>
+                  <option value="eps">EPS</option>
+                </select>
+              </div>
+            </div>
+            <div class="buttonGroup">
+              <button
+                type="button"
+                value="submit"
+                class="btn btn-primary"
+                onclick="generateQR()"
+              >
+                Generate
+              </button>
+              <button
+                type="button"
+                value="Download"
+                class="btn btn-success"
+                onclick="downloadQR()"
+              >
+                Download
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="add_to_child"></div>
+
+          <img src="" id="add_to_me" alt="" title="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function generateQR() {
+    let dataDetail = document.getElementById("data").value;
+    let width = document.getElementById("width").value;
+    let Height = document.getElementById("Height").value;
+    let qrColor = document.getElementById("qrColor").value;
+    let backColor = document.getElementById("backColor").value;
+    let format = document.getElementById("format").value;
+    const forThousand = ["png", "gif", "jpeg", "jpg"];
+    const forTenThousand = ["svg", "eps"];
+    if (!dataDetail || !width || !Height || !qrColor || !backColor || !format) {
+      sendAlert("Fields cannot be empty");
+    } else if (width != Height || width < 10) {
+      sendAlert("width and height should be same and not less than 10");
+    } else if (forThousand.includes(format) && width > 1000) {
+      sendAlert(
+        "png, gif, jpeg, jpg width and height should be less than or equal to 1000"
+      );
+    } else if (forTenThousand.includes(format) && width > 10000) {
+      sendAlert(
+        "png, gif, jpeg, jpg width and height should be less than or equal to 10000"
+      );
+    } else {
+      dataDetail = encodeURI(dataDetail);
+      qrColor = qrColor.slice(1);
+      backColor = backColor.slice(1);
+
+      document.getElementById(
+        "add_to_me"
+      ).src = `https://api.qrserver.com/v1/create-qr-code/?data=${dataDetail}&size=${width}x${Height}&color=${qrColor}&bgcolor=${backColor}&format=${format}`;
+    }
+  }
+
+  function downloadQR() {
+    let dataDetail = document.getElementById("data").value;
+    let width = document.getElementById("width").value;
+    let Height = document.getElementById("Height").value;
+    let qrColor = document.getElementById("qrColor").value;
+    let backColor = document.getElementById("backColor").value;
+    let format = document.getElementById("format").value;
+    const forThousand = ["png", "gif", "jpeg", "jpg"];
+    const forTenThousand = ["svg", "eps"];
+    if (!dataDetail || !width || !Height || !qrColor || !backColor || !format) {
+      sendAlert("Fields cannot be empty");
+    } else if (width != Height || width < 10) {
+      sendAlert("Width and height should be same and not less than 10");
+    } else if (forThousand.includes(format) && width > 1000) {
+      sendAlert(
+        "png, gif, jpeg, jpg width and height should be less than or equal to 1000"
+      );
+    } else if (forTenThousand.includes(format) && width > 10000) {
+      sendAlert(
+        "png, gif, jpeg, jpg width and height should be less than or equal to 10000"
+      );
+    } else {
+      dataDetail = encodeURI(dataDetail);
+      qrColor = qrColor.slice(1);
+      backColor = backColor.slice(1);
+
+      let url = `https://api.qrserver.com/v1/create-qr-code/?data=${dataDetail}&size=${width}x${Height}&color=${qrColor}&bgcolor=${backColor}&format=${format}`;
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.id = "downloadId";
+      a.target = "_blank";
+      a.download = url.split("/").pop();
+      document.getElementById("add_to_child").appendChild(a);
+      a.click();
+    }
+  }
+
+  function sendAlert(message) {
+    document.getElementById("alertMessage").style.display = "block";
+    document.getElementById("alertMessage").innerHTML = message;
+    $("#alertMessage").delay(3200).fadeOut(300);
+  }
+</script>
