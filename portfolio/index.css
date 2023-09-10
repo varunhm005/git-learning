@@ -1,0 +1,181 @@
+.imageField {
+  background-image: url("./Images/istockphoto-1446934118-1024x1024.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.carousel-options {
+  right: 15% !important;
+  bottom: 42% !important;
+  left: -61% !important;
+}
+
+#skills-section > h1 {
+  text-align: center;
+  background-color: black;
+  padding: 135px 40px 0px 40px;
+  color: white;
+  margin: 0;
+}
+
+.skills-section-cont {
+  padding-top: 40px;
+}
+
+.skills-section-label {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#about-section {
+  background-color: black;
+  padding: 135px 40px 0px 40px;
+  color: white;
+}
+
+.about-col > h1 {
+  padding: 20px 0px !important;
+  font-size: p50px !important;
+}
+
+.about-col {
+  padding: 40px 20px;
+}
+.about-col-left {
+  padding: 40px 20px;
+}
+.about-col-left > img {
+  position: relative;
+  left: 190px;
+  top: 50px;
+}
+.about-col > p {
+  color: #999999 !important;
+  font-size: 20px;
+}
+
+.about-info > li {
+  font-size: 20px;
+  color: #999999;
+  padding: 18px 0px;
+}
+
+ul.about-info li span:first-child {
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+}
+
+.skills-section-row {
+  background-color: black;
+  color: white;
+  padding: 0px 15%;
+  margin: 0 !important;
+}
+
+.skills-section-col-left {
+  padding-right: 70px !important;
+}
+
+.skills-section-col-right {
+  padding-left: 70px !important;
+}
+
+#contact-section {
+  background-color: black;
+  padding: 135px 40px;
+  color: white;
+}
+
+#contact-section > h1 {
+  text-align: center;
+}
+
+.icon-content {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  position: relative;
+  left: 36%;
+}
+
+.icon-content > i {
+  color: #ffbd39;
+  font-size: 40px;
+  position: relative;
+  top: 30px;
+}
+
+.contact-section-row {
+  padding: 70px 190px 0px 190px !important;
+  text-align: center;
+}
+
+.contact-section-col > h4 {
+  color: white;
+  padding-top: 20px;
+}
+
+.contact-section-col > p {
+  color: #999999;
+  font-size: 25px;
+}
+
+#footer-section {
+  text-align: center;
+  font-weight: 600;
+  background-color: black;
+  color: #999999;
+  padding: 20px 0px;
+  font-size: 20px;
+}
+
+.heart-icon {
+  color: #ffbd39 !important;
+}
+
+.calltureClickable {
+  color: #999999 !important;
+  padding-left: 10px;
+}
+
+#project-section {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px 40px 0px 40px;
+}
+
+.project-section-row {
+  padding: 50px 180px 0px 180px;
+}
+
+.project-section-card {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.project-section-card > i {
+  font-size: 80px;
+  color: #ffbd39;
+  padding-top: 50px;
+}
+
+nav {
+  background-color: black;
+}
+
+a {
+  color: white !important;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 30px !important;
+  font-weight: 600;
+}
+
+#toggeeButton {
+  background-color: #ffbd39;
+}
