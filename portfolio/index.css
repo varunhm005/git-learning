@@ -179,3 +179,11 @@ a {
 #toggeeButton {
   background-color: #ffbd39;
 }
+
+#navbarScroll {
+  padding-left: 25%;
+}
+
+.nav-ul > li {
+  padding: 0px 50px !important;
+}
