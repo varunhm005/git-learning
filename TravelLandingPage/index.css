@@ -11,6 +11,10 @@
   src: url("./Fonts/Peralta/Peralta-Regular.ttf");
 }
 
+#navbarTogglerDemo02 {
+  padding-left: 13%;
+}
+
 .navbar-brand {
   font-family: "peralta";
   font-size: 24px !important;
@@ -262,11 +266,21 @@
 }
 
 .overLapCardParent {
+  display: none !important;
   position: absolute !important;
   z-index: 1;
   border-radius: 20px !important;
   left: 225px;
   top: 293px;
+}
+
+.overLapCardParentHigher {
+  position: absolute !important;
+  left: 235px;
+  top: 293px;
+  width: 280px;
+  z-index: 1;
+  border-radius: 20px !important;
 }
 
 .overLapCardChild {
@@ -295,7 +309,7 @@
 
 .percentField {
   font-size: 14px;
-  padding-top: 10px !important;
+  padding-top: 0px !important;
   font-weight: 600;
 }
 
@@ -477,6 +491,7 @@
 
 .input-group-prepend {
   height: 50px;
+  width: 80% !important;
 }
 
 .footerContainer {
@@ -510,6 +525,7 @@
   height: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
+  padding-right: 3rem !important;
 }
 
 .socialIcons > i {
@@ -525,22 +541,24 @@
 }
 
 .finalFirstImage {
-  position: absolute;
+  padding: 11px 11px 11px 0px;
 }
 
 .finalSecondDetail {
   position: relative;
-  right: 175px;
+  bottom: 30px;
+  left: 10px;
+  /* right: 175px; */
 }
 
 .finalThirdDetail {
   position: relative;
-  z-index: 1 !important;
-  right: 76px;
+  /* z-index: 1 !important; */
+  right: 70px;
 }
 
 .finalImage {
-  padding-left: 20px !important;
+  padding: 10px;
 }
 
 .bottomFooter {
@@ -549,10 +567,10 @@
   padding-top: 40px;
 }
 
-@media only screen and (max-width: 480px) {
-  .container-fluid {
+@media only screen and (max-width: 320px) {
+  /* .container-fluid {
     width: 128% !important;
-  }
+  } */
   .boxtopColorParent,
   .boxbotColorParent {
     display: none;
@@ -587,5 +605,1693 @@
 
   .nav-link {
     padding-top: 0px !important;
+  }
+
+  .offerImage {
+    width: 22% !important;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    left: 37%;
+  }
+
+  .offerImageMid {
+    left: 32%;
+  }
+
+  .offerContent > h5 {
+    font-size: 16px;
+  }
+
+  .offerContent > p {
+    padding: 0px 50px 10px 50px;
+    font-size: 12px;
+  }
+
+  .topSellingCard > img {
+    height: 275px;
+  }
+
+  .nameField > div,
+  .tripField {
+    text-align: center !important;
+  }
+
+  .easyLeftSecond {
+    font-size: 25px;
+  }
+
+  .easeLeftFstContent {
+    font-size: 18px;
+  }
+
+  .easeLeftSndContent {
+    font-size: 15px;
+  }
+
+  .easyLeftFirst {
+    padding-left: 0px;
+  }
+
+  .easyImageCard {
+    width: 18rem !important;
+  }
+
+  .blueCircle {
+    display: none;
+  }
+
+  .easyBody > h5 {
+    font-size: 18px;
+  }
+
+  .easyBodyContent {
+    font-size: 12px;
+    width: 25% !important;
+  }
+  .easyBodyContentRight {
+    font-size: 12px;
+    width: 35% !important;
+  }
+
+  .overLapCardParent {
+    display: block !important;
+    position: unset !important;
+    left: 42px;
+    top: 293px;
+    width: 245px;
+    z-index: 1;
+  }
+  .overLapCardParentHigher {
+    display: none !important;
+    position: absolute !important;
+    left: 235px;
+    top: 293px;
+    width: 280px;
+    z-index: 1;
+    border-radius: 20px !important;
+  }
+
+  .overLapTestOne {
+    font-size: 12px;
+  }
+
+  .overLapTestTwo {
+    font-size: 16px;
+  }
+  .percentField {
+    font-size: 12px;
+    padding-top: 0px !important;
+  }
+  .percentColor {
+    font-size: 15px;
+  }
+
+  .tripCol-Left {
+    width: 38% !important;
+    padding: 10px !important;
+  }
+
+  .tripCol-Right {
+    width: 60% !important;
+    padding: 0px !important;
+  }
+
+  .easyBodyImg {
+    width: 20% !important;
+  }
+
+  .easyBodyMiddle {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    width: 60% !important;
+  }
+
+  .easyBodyLast {
+    width: 20% !important;
+    font-size: 10px;
+  }
+
+  .easyBodyIcons > i {
+    font-size: 13px;
+    padding-right: 15px;
+    padding-top: 8px;
+  }
+
+  .easyBodyIcons {
+    position: absolute;
+    top: 48%;
+    left: 58%;
+  }
+
+  .easyBodyIcons > i {
+    padding-top: 0px;
+  }
+
+  .fa-leaf {
+    padding-left: 10px;
+    padding-bottom: 7px !important;
+    border-left: 1px solid #84829a;
+  }
+
+  .easyBodyFinalRow {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .easyLeftImgField {
+    max-width: 25.666667% !important;
+  }
+
+  .chooser-fluid > h1 {
+    font-size: 25px;
+  }
+
+  .chooser-fluid > p {
+    font-size: 15px;
+    padding: 8% 0% 8% 0%;
+  }
+
+  .contentField {
+    padding-top: 0px !important;
+  }
+
+  .contentField > h5 {
+    font-size: 14px;
+  }
+
+  .contentField > p {
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .mobileTopPadding {
+    padding-top: 15px;
+  }
+
+  .subscribe-fluid {
+    text-align: center;
+    font-size: 16px;
+    color: #5e6282;
+    padding: 15px 10px !important;
+    background-color: #f9f7fe !important;
+    /* border-top-left-radius: 120px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 30px !important;
+    font-weight: 600;
+  }
+
+  .input-group {
+    width: 100% !important;
+    left: 3%;
+  }
+
+  .input-group-text,
+  .form-control {
+    height: 30px !important;
+  }
+
+  .subscribeBtn {
+    margin-left: 76px !important;
+  }
+
+  .footerContainer {
+    padding-top: 30px;
+  }
+
+  .socialIconsHead {
+    padding-right: 0rem !important;
+  }
+
+  .finalSecondContent {
+    font-size: 20px;
+  }
+
+  .header-content > h1 {
+    font-size: 16px;
+  }
+
+  .header-content > h3 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 424px) {
+  /* .container-fluid {
+    width: 128% !important;
+  } */
+  .boxtopColorParent,
+  .boxbotColorParent {
+    display: none;
+  }
+  .header-content > h1 {
+    font-size: 19px;
+  }
+  .header-content > h3 {
+    font-size: 15px;
+  }
+  .header-image {
+    background-size: contain;
+  }
+  .header-content {
+    padding: 12% 0% 0% 1%;
+  }
+  .header-image {
+    height: 40vh;
+  }
+
+  .catOffer {
+    font-size: 15px;
+  }
+
+  .weOffer {
+    font-size: 18px;
+  }
+
+  .offerCard {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding-top: 0px !important;
+  }
+
+  .offerImage {
+    width: 22% !important;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    left: 37%;
+  }
+
+  .offerImageMid {
+    left: 32%;
+  }
+
+  .offerContent > h5 {
+    font-size: 16px;
+  }
+
+  .offerContent > p {
+    padding: 0px 50px 10px 50px;
+    font-size: 12px;
+  }
+
+  .topSellingCard > img {
+    height: 275px;
+  }
+
+  .nameField > div,
+  .tripField {
+    text-align: center !important;
+  }
+
+  .easyLeftSecond {
+    font-size: 25px;
+  }
+
+  .easeLeftFstContent {
+    font-size: 18px;
+  }
+
+  .easeLeftSndContent {
+    font-size: 15px;
+  }
+
+  .easyLeftFirst {
+    padding-left: 0px;
+  }
+
+  .easyImageCard {
+    width: 21.5rem !important;
+  }
+
+  .blueCircle {
+    display: none;
+  }
+
+  .easyBody > h5 {
+    font-size: 18px;
+  }
+
+  .easyBodyContent {
+    font-size: 12px;
+    width: 25% !important;
+  }
+  .easyBodyContentRight {
+    font-size: 12px;
+    width: 35% !important;
+  }
+
+  .overLapCardParent {
+    display: block !important;
+    position: unset !important;
+    left: 42px;
+    top: 293px;
+    width: 300px;
+  }
+
+  .overLapCardParentHigher {
+    display: none !important;
+  }
+
+  .overLapTestOne {
+    font-size: 12px;
+  }
+
+  .overLapTestTwo {
+    font-size: 16px;
+  }
+  .percentField {
+    font-size: 12px;
+    padding-top: 0px !important;
+  }
+  .percentColor {
+    font-size: 15px;
+  }
+
+  .tripCol-Left {
+    width: 38% !important;
+    padding: 10px !important;
+  }
+
+  .tripCol-Right {
+    width: 60% !important;
+    padding: 0px !important;
+  }
+
+  .easyBodyImg {
+    width: 20% !important;
+  }
+
+  .easyBodyMiddle {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    width: 60% !important;
+  }
+
+  .easyBodyLast {
+    width: 20% !important;
+    font-size: 10px;
+  }
+
+  .easyBodyIcons > i {
+    font-size: 13px;
+    padding-right: 15px;
+    padding-top: 8px;
+  }
+
+  .easyBodyIcons {
+    position: absolute;
+    top: 48%;
+    left: 58%;
+  }
+
+  .easyBodyIcons > i {
+    padding-top: 0px;
+  }
+
+  .fa-leaf {
+    padding-left: 10px;
+    padding-bottom: 7px !important;
+    border-left: 1px solid #84829a;
+  }
+
+  .easyBodyFinalRow {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .easyLeftImgField {
+    max-width: 25.666667% !important;
+  }
+
+  .chooser-fluid > h1 {
+    font-size: 25px;
+  }
+
+  .chooser-fluid > p {
+    font-size: 15px;
+    padding: 8% 0% 8% 0%;
+  }
+
+  .contentField {
+    padding-top: 0px !important;
+  }
+
+  .contentField > h5 {
+    font-size: 14px;
+  }
+
+  .contentField > p {
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .mobileTopPadding {
+    padding-top: 15px;
+  }
+
+  .subscribe-fluid {
+    text-align: center;
+    font-size: 16px;
+    color: #5e6282;
+    padding: 15px 10px !important;
+    background-color: #f9f7fe !important;
+    /* border-top-left-radius: 120px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 30px !important;
+    font-weight: 600;
+  }
+
+  .input-group {
+    width: 100% !important;
+    left: 3%;
+  }
+
+  .input-group-text,
+  .form-control {
+    height: 30px !important;
+  }
+
+  .subscribeBtn {
+    margin-left: 110px !important;
+  }
+
+  .footerContainer {
+    padding-top: 30px;
+  }
+
+  .socialIconsHead {
+    padding-right: 0rem !important;
+  }
+
+  .finalSecondContent {
+    font-size: 20px;
+  }
+
+  .header-content > h1 {
+    font-size: 16px;
+  }
+
+  .header-content > h3 {
+    font-size: 12px;
+  }
+
+  .input-group-prepend {
+    width: 305px !important;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  /* .container-fluid {
+    width: 128% !important;
+  } */
+  .boxtopColorParent,
+  .boxbotColorParent {
+    display: none;
+  }
+  .header-content > h1 {
+    font-size: 19px;
+  }
+  .header-content > h3 {
+    font-size: 15px;
+  }
+  .header-image {
+    background-size: contain;
+  }
+  .header-content {
+    padding: 12% 0% 0% 1%;
+  }
+  .header-image {
+    height: 40vh;
+  }
+
+  .catOffer {
+    font-size: 15px;
+  }
+
+  .weOffer {
+    font-size: 18px;
+  }
+
+  .offerCard {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding-top: 0px !important;
+  }
+
+  .offerImage {
+    width: 22% !important;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    left: 37%;
+  }
+
+  .offerImageMid {
+    left: 32%;
+  }
+
+  .offerContent > h5 {
+    font-size: 16px;
+  }
+
+  .offerContent > p {
+    padding: 0px 10px 10px 10px;
+    font-size: 12px;
+  }
+
+  .topSellingCard > img {
+    height: 275px;
+  }
+
+  /* .nameField {
+    justify-content: center;
+  }
+
+  .nameField div:nth-child(2) {
+    max-width: max-content;
+  } */
+
+  .nameField > div,
+  .tripField {
+    text-align: center !important;
+  }
+
+  .easyLeftSecond {
+    font-size: 25px;
+  }
+
+  .easeLeftFstContent {
+    font-size: 18px;
+  }
+
+  .easeLeftSndContent {
+    font-size: 15px;
+  }
+
+  .easyLeftFirst {
+    padding-left: 0px;
+  }
+
+  .easyImageCard {
+    width: 24.2rem !important;
+  }
+
+  .blueCircle {
+    display: none;
+  }
+
+  .easyBody > h5 {
+    font-size: 18px;
+  }
+
+  .easyBodyContent {
+    font-size: 12px;
+    width: 25% !important;
+  }
+  .easyBodyContentRight {
+    font-size: 12px;
+    width: 35% !important;
+  }
+
+  .overLapCardParent {
+    display: block !important;
+    position: unset !important;
+    left: 42px;
+    top: 293px;
+    width: 343px;
+  }
+
+  .overLapCardParentHigher {
+    display: none !important;
+  }
+
+  .overLapTestOne {
+    font-size: 12px;
+  }
+
+  .overLapTestTwo {
+    font-size: 16px;
+  }
+  .percentField {
+    font-size: 12px;
+    padding-top: 0px !important;
+  }
+  .percentColor {
+    font-size: 15px;
+  }
+
+  .tripCol-Left {
+    width: 38% !important;
+    padding: 10px !important;
+  }
+
+  .tripCol-Right {
+    width: 60% !important;
+    padding: 0px !important;
+  }
+
+  .easyBodyImg {
+    width: 20% !important;
+  }
+
+  .easyBodyMiddle {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    width: 60% !important;
+  }
+
+  .easyBodyLast {
+    width: 20% !important;
+    font-size: 10px;
+  }
+
+  .easyBodyIcons > i {
+    font-size: 13px;
+    padding-right: 15px;
+    padding-top: 8px;
+  }
+
+  .easyBodyIcons {
+    position: absolute;
+    top: 48%;
+    left: 58%;
+  }
+
+  .easyBodyIcons > i {
+    padding-top: 0px;
+  }
+
+  .fa-leaf {
+    padding-left: 10px;
+    padding-bottom: 7px !important;
+    border-left: 1px solid #84829a;
+  }
+
+  .easyBodyFinalRow {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .easyLeftImgField {
+    max-width: 25.666667% !important;
+  }
+
+  .chooser-fluid > h1 {
+    font-size: 25px;
+  }
+
+  .chooser-fluid > p {
+    font-size: 15px;
+    padding: 8% 0% 8% 0%;
+  }
+
+  .contentField {
+    padding-top: 0px !important;
+  }
+
+  .contentField > h5 {
+    font-size: 14px;
+  }
+
+  .contentField > p {
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .mobileTopPadding {
+    padding-top: 15px;
+  }
+
+  .subscribe-fluid {
+    text-align: center;
+    font-size: 16px;
+    color: #5e6282;
+    padding: 15px 10px !important;
+    background-color: #f9f7fe !important;
+    /* border-top-left-radius: 120px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 30px !important;
+    font-weight: 600;
+  }
+
+  .input-group {
+    width: 100% !important;
+    left: 3%;
+  }
+
+  .input-group-text,
+  .form-control {
+    height: 30px !important;
+  }
+
+  .subscribeBtn {
+    margin-left: 135px !important;
+  }
+
+  .footerContainer {
+    padding-top: 30px;
+  }
+
+  .socialIconsHead {
+    padding-right: 0rem !important;
+  }
+
+  .finalSecondContent {
+    font-size: 20px;
+  }
+
+  .header-content > h1 {
+    font-size: 16px;
+  }
+
+  .header-content > h3 {
+    font-size: 12px;
+  }
+
+  .input-group-prepend {
+    width: 355px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* .container-fluid {
+    width: 128% !important;
+  } */
+  .boxtopColorParent,
+  .boxbotColorParent {
+    display: none;
+  }
+  .header-content > h1 {
+    font-size: 19px;
+  }
+  .header-content > h3 {
+    font-size: 15px;
+  }
+  .header-image {
+    background-size: contain;
+  }
+  .header-content {
+    padding: 12% 0% 0% 1%;
+  }
+  .header-image {
+    height: 60vh;
+  }
+
+  .catOffer {
+    font-size: 15px;
+  }
+
+  .weOffer {
+    font-size: 18px;
+  }
+
+  .offerCard {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding-top: 0px !important;
+  }
+
+  .offerImage {
+    width: 22% !important;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    left: 37%;
+  }
+
+  .offerImageMid {
+    left: 32%;
+  }
+
+  .offerContent > h5 {
+    font-size: 16px;
+  }
+
+  .offerContent > p {
+    padding: 0px 10px 10px 10px;
+    font-size: 12px;
+  }
+
+  .topSellingCard > img {
+    height: 275px;
+  }
+
+  .nameField {
+    justify-content: center;
+  }
+
+  .nameField div:nth-child(2) {
+    max-width: max-content;
+  }
+
+  .mobileTopPadding {
+    max-width: 33% !important;
+  }
+
+  .nameField > div,
+  .tripField {
+    text-align: center !important;
+  }
+
+  .easyLeftSecond {
+    font-size: 25px;
+  }
+
+  .easeLeftFstContent {
+    font-size: 18px;
+  }
+
+  .easeLeftSndContent {
+    font-size: 15px;
+  }
+
+  .easyLeftFirst {
+    padding-left: 0px;
+  }
+
+  .easyImageCard {
+    width: 21.2rem !important;
+  }
+
+  .blueCircle {
+    display: none;
+  }
+
+  .easyBody > h5 {
+    font-size: 18px;
+  }
+
+  .easyBodyContent {
+    font-size: 12px;
+    width: 25% !important;
+  }
+  .easyBodyContentRight {
+    font-size: 12px;
+    width: 35% !important;
+  }
+
+  .overLapCardParent {
+    display: block !important;
+    position: unset !important;
+    left: 42px;
+    top: 293px;
+    width: 300px;
+  }
+
+  .overLapCardParentHigher {
+    display: none !important;
+  }
+
+  .overLapTestOne {
+    font-size: 12px;
+  }
+
+  .overLapTestTwo {
+    font-size: 16px;
+  }
+  .percentField {
+    font-size: 12px;
+    padding-top: 0px !important;
+  }
+  .percentColor {
+    font-size: 15px;
+  }
+
+  .tripCol-Left {
+    width: 38% !important;
+    padding: 10px !important;
+  }
+
+  .tripCol-Right {
+    width: 60% !important;
+    padding: 0px !important;
+  }
+
+  .easyBodyImg {
+    width: 20% !important;
+  }
+
+  .easyBodyMiddle {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    width: 60% !important;
+  }
+
+  .easyBodyLast {
+    width: 20% !important;
+    font-size: 10px;
+  }
+
+  .easyBodyIcons > i {
+    font-size: 13px;
+    padding-right: 15px;
+    padding-top: 8px;
+  }
+
+  .easyBodyIcons {
+    position: absolute;
+    top: 48%;
+    left: 58%;
+  }
+
+  .easyBodyIcons > i {
+    padding-top: 0px;
+  }
+
+  .fa-leaf {
+    padding-left: 10px;
+    padding-bottom: 7px !important;
+    border-left: 1px solid #84829a;
+  }
+
+  .easyBodyFinalRow {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .easyLeftImgField {
+    max-width: 25.666667% !important;
+  }
+
+  .chooser-fluid > h1 {
+    font-size: 25px;
+  }
+
+  .chooser-fluid > p {
+    font-size: 15px;
+    padding: 4% 10% 4% 10%;
+  }
+
+  .contentField {
+    padding-top: 0px !important;
+  }
+
+  .contentField > h5 {
+    font-size: 14px;
+  }
+
+  .contentField > p {
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .mobileTopPadding {
+    padding-top: 15px;
+  }
+
+  .subscribe-fluid {
+    text-align: center;
+    font-size: 16px;
+    color: #5e6282;
+    padding: 15px 10px !important;
+    background-color: #f9f7fe !important;
+    /* border-top-left-radius: 120px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 30px !important;
+    font-weight: 600;
+  }
+
+  .input-group {
+    width: 100% !important;
+    left: 3%;
+  }
+
+  .input-group-text,
+  .form-control {
+    height: 50px !important;
+  }
+
+  .subscribeBtn {
+    margin-left: 20px !important;
+  }
+
+  .footerContainer {
+    padding-top: 30px;
+  }
+
+  .socialIconsHead {
+    padding-right: 0rem !important;
+  }
+
+  .finalSecondContent {
+    font-size: 20px;
+  }
+
+  .header-content > h1 {
+    font-size: 16px;
+  }
+
+  .header-content > h3 {
+    font-size: 12px;
+  }
+
+  .input-group-prepend {
+    width: 355px !important;
+  }
+
+  .footerCol > h5 {
+    font-size: 16px !important;
+  }
+
+  .footerCol > div {
+    font-size: 12px !important;
+  }
+
+  /* .footerFrstCol {
+    padding-right: 10px !important;
+  } */
+  .footerFrstCol > div {
+    font-size: 12px;
+    padding-right: 0px !important;
+  }
+
+  .footerCol {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    max-width: 17% !important;
+  }
+
+  .footerColLast {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    max-width: 20% !important;
+  }
+
+  .socialIconsHead > div {
+    width: 40px;
+  }
+
+  .finalFirstImage {
+    width: 55%;
+  }
+
+  .finalImage {
+    width: 53%;
+  }
+
+  .topSellingCol {
+    padding: 0px 15px !important;
+  }
+
+  .subscribe-fluid > div {
+    padding-left: 90px;
+  }
+
+  .card-icons-first,
+  .card-icons-second,
+  .card-icons-third {
+    left: 38%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* .boxtopColorParent,
+  .boxbotColorParent {
+    display: none;
+  }
+  .header-content > h1 {
+    font-size: 19px;
+  }
+  .header-content > h3 {
+    font-size: 15px;
+  }
+  .header-image {
+    background-size: contain;
+  }
+  .header-content {
+    padding: 12% 0% 0% 1%;
+  }
+  .header-image {
+    height: 40vh;
+  } */
+
+  .catOffer {
+    font-size: 15px;
+  }
+
+  .weOffer {
+    font-size: 18px;
+  }
+
+  .offerCard {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding-top: 0px !important;
+  }
+
+  .offerImage {
+    width: 22% !important;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    left: 37%;
+  }
+
+  .offerImageMid {
+    left: 32%;
+  }
+
+  .offerContent > h5 {
+    font-size: 16px;
+  }
+
+  .offerContent > p {
+    padding: 0px 10px 10px 10px;
+    font-size: 12px;
+  }
+
+  .topSellingCard > img {
+    height: 275px;
+  }
+
+  /* .nameField {
+    justify-content: center;
+  } */
+
+  /* .nameField div:nth-child(2) {
+    max-width: max-content;
+  } */
+
+  .mobileTopPadding {
+    max-width: 33% !important;
+  }
+
+  /* .nameField > div,
+  .tripField {
+    text-align: center !important;
+  } */
+
+  .easyLeftSecond {
+    font-size: 25px;
+  }
+
+  .easeLeftFstContent {
+    font-size: 18px;
+  }
+
+  .easeLeftSndContent {
+    font-size: 15px;
+  }
+
+  .easyLeftFirst {
+    padding-left: 0px;
+  }
+
+  .easyImageCard {
+    width: 21.2rem !important;
+  }
+
+  .blueCircle {
+    display: none;
+  }
+
+  .easyBody > h5 {
+    font-size: 18px;
+  }
+
+  .easyBodyContent {
+    font-size: 12px;
+    width: 25% !important;
+  }
+  .easyBodyContentRight {
+    font-size: 12px;
+    width: 35% !important;
+  }
+
+  .overLapCardParent {
+    display: block !important;
+    position: unset !important;
+    left: 42px;
+    top: 293px;
+    width: 300px;
+  }
+
+  .overLapCardParentHigher {
+    display: none !important;
+  }
+
+  .overLapTestOne {
+    font-size: 12px;
+  }
+
+  .overLapTestTwo {
+    font-size: 16px;
+  }
+  .percentField {
+    font-size: 12px;
+    padding-top: 0px !important;
+  }
+  .percentColor {
+    font-size: 15px;
+  }
+
+  .tripCol-Left {
+    width: 38% !important;
+    padding: 10px !important;
+  }
+
+  .tripCol-Right {
+    width: 60% !important;
+    padding: 0px !important;
+  }
+
+  .easyBodyImg {
+    width: 20% !important;
+  }
+
+  .easyBodyMiddle {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    width: 60% !important;
+  }
+
+  .easyBodyLast {
+    width: 20% !important;
+    font-size: 10px;
+  }
+
+  .easyBodyIcons > i {
+    font-size: 13px;
+    padding-right: 15px;
+    padding-top: 8px;
+  }
+
+  .easyBodyIcons {
+    position: absolute;
+    top: 48%;
+    left: 58%;
+  }
+
+  .easyBodyIcons > i {
+    padding-top: 0px;
+  }
+
+  .fa-leaf {
+    padding-left: 10px;
+    padding-bottom: 7px !important;
+    border-left: 1px solid #84829a;
+  }
+
+  .easyBodyFinalRow {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .easyLeftImgField {
+    max-width: 25.666667% !important;
+  }
+
+  .chooser-fluid > h1 {
+    font-size: 25px;
+  }
+
+  .chooser-fluid > p {
+    font-size: 15px;
+    padding: 4% 10% 4% 10%;
+  }
+
+  .contentField {
+    padding-top: 0px !important;
+  }
+
+  .contentField > h5 {
+    font-size: 14px;
+  }
+
+  .contentField > p {
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .mobileTopPadding {
+    padding-top: 15px;
+  }
+
+  .input-group {
+    width: 100% !important;
+    left: 3%;
+  }
+
+  .input-group-text,
+  .form-control {
+    height: 50px !important;
+  }
+
+  .subscribeBtn {
+    margin-left: 20px !important;
+  }
+
+  .footerContainer {
+    padding-top: 30px;
+  }
+
+  .socialIconsHead {
+    padding-right: 0rem !important;
+  }
+
+  .finalSecondContent {
+    font-size: 20px;
+  }
+
+  .header-content > h1 {
+    font-size: 26px;
+  }
+
+  .header-content > h3 {
+    font-size: 20px;
+  }
+
+  .input-group-prepend {
+    width: 355px !important;
+  }
+
+  .footerCol > h5 {
+    font-size: 16px !important;
+  }
+
+  .footerCol > div {
+    font-size: 12px !important;
+  }
+
+  /* .footerFrstCol {
+    padding-right: 10px !important;
+  } */
+  .footerFrstCol > div {
+    font-size: 12px;
+    padding-right: 0px !important;
+  }
+
+  .footerCol {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    max-width: 17% !important;
+  }
+
+  .footerColLast {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    max-width: 20% !important;
+  }
+
+  .socialIconsHead > div {
+    width: 40px;
+  }
+
+  .finalFirstImage {
+    width: 55%;
+  }
+
+  .finalImage {
+    width: 53%;
+  }
+
+  .topSellingCol {
+    padding: 0px 15px !important;
+  }
+
+  .subscribe-fluid > div {
+    padding-left: 140px;
+  }
+
+  .signupButton {
+    background-color: #ec682c !important;
+    margin: 6px 10px !important;
+    padding: 0px 10px !important;
+    font-size: 14px !important;
+    color: white !important;
+    font-weight: 600 !important;
+  }
+
+  .nav-pad > li {
+    padding: 0px 13px !important;
+  }
+
+  .boxtopColorChild {
+    left: 100vh;
+  }
+
+  .boxbotColorChild {
+    top: 20vh;
+    left: 35vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+  .nav-pad > li {
+    padding: 0px 50px !important;
+  }
+
+  .boxtopColorChild {
+    left: 147vh;
+  }
+
+  .boxbotColorChild {
+    top: 39vh;
+    left: 50vh;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .navbar-brand {
+    font-size: 50px !important;
+  }
+
+  .nav-pad > li {
+    font-size: 28px;
+  }
+
+  .loginButton,
+  .signupButton {
+    font-size: 22px !important;
+  }
+
+  .nav-pad > li {
+    padding: 0px 115px !important;
+  }
+
+  .header-content > h1 {
+    font-size: 65px !important;
+  }
+  .header-content > h3 {
+    font-size: 55px !important;
+  }
+
+  .header-content > button {
+    font-size: 30px !important;
+  }
+
+  .offerContent > h5 {
+    font-size: 30px;
+  }
+
+  .offerContent > p {
+    font-size: 25px;
+  }
+
+  .topSellingCard > img {
+    height: 860px;
+  }
+
+  .nameField {
+    font-size: 30px;
+  }
+
+  .tripField {
+    font-size: 26px;
+  }
+
+  .easyLeftFirst {
+    font-size: 30px;
+  }
+
+  .boxtopColorChild {
+    left: 147vh;
+  }
+
+  .boxbotColorChild {
+    top: 27vh;
+    left: 51vh;
+  }
+  .easeLeftFstContent {
+    font-size: 30px;
+  }
+
+  .easeLeftSndContent {
+    font-size: 28px;
+  }
+
+  .contentField > h5 {
+    font-size: 35px;
+  }
+
+  .card-icons-first,
+  .card-icons-second,
+  .card-icons-third {
+    width: 125px;
+    height: 125px;
+    border-radius: 70px;
+    bottom: 60px;
+    left: 44%;
+  }
+
+  .card-icons-first > i,
+  .card-icons-second > i,
+  .card-icons-third > i {
+    position: relative;
+    top: 33px;
+    left: 35px;
+    font-size: 59px;
+  }
+
+  .chooser-fluid > p {
+    font-size: 36px;
+    text-align: center;
+    padding: 3% 21% 8% 21%;
+  }
+
+  .contentField > p {
+    font-size: 28px;
+    text-align: center;
+    padding: 36px;
+  }
+
+  .subscribe-fluid {
+    font-size: 40px;
+  }
+
+  .input-group-text,
+  .form-control {
+    height: 70px !important;
+    font-size: 25px !important;
+  }
+
+  .subscribeBtn {
+    font-size: 25px !important;
+    padding: 15px 20px !important;
+  }
+
+  .subscribe-fullStyle {
+    padding-top: 30px;
+  }
+
+  .footerFrstCol {
+    line-height: 50px !important;
+    font-size: 26px;
+  }
+
+  .footerCol > h5 {
+    font-size: 35px !important;
+  }
+
+  .footerCol > div {
+    font-size: 30px;
+  }
+
+  .socialIconsHead > div {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+  }
+
+  .socialIcons > i {
+    font-size: 47px;
+    top: 28px;
+    left: 33px;
+  }
+
+  .finalSecondContent {
+    font-size: 30px;
+  }
+
+  .bottomFooter {
+    font-size: 30px;
+  }
+
+  .easyImageCard {
+    width: 42rem !important;
+  }
+
+  .easyBody > h5 {
+    font-size: 34px;
+  }
+
+  .easyBodyContent {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .verticalLine {
+    height: 50px;
+  }
+
+  .easyBodyContentRight {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .easyBodyIcons > i {
+    font-size: 25px;
+  }
+
+  .easyBodyImg > img {
+    width: 50%;
+  }
+
+  .easyBodyMiddle {
+    font-size: 25px !important;
+    line-height: 32px !important;
+  }
+
+  .easyBodyLast > i {
+    font-size: 43px !important;
+  }
+
+  .easyBody {
+    padding-top: 10px !important;
+    padding-bottom: 25px !important;
+  }
+
+  .overLapCardParentHigher {
+    left: 379px;
+    top: 475px;
+    width: 393px;
+    z-index: 1;
+  }
+
+  .overLapCardImg {
+    border-radius: 65px !important;
+    width: 125%;
+  }
+
+  .overLapTestOne {
+    font-size: 22px;
+  }
+
+  .overLapTestTwo {
+    font-size: 27px;
+  }
+
+  .percentColor {
+    font-size: 23px;
+  }
+
+  .percentField {
+    font-size: 22px;
+  }
+
+  .tripCol-Right {
+    padding: 0px 33px !important;
   }
 }
