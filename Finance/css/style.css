@@ -539,3 +539,9 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+#whatsAppIcon {
+    position: fixed;
+    bottom: 35px;
+    left: 20px;
+}
