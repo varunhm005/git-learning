@@ -1,0 +1,22 @@
+.row{
+    padding: 0px 100px;
+    margin: 0px ;
+    
+    
+}
+
+.card-body :first-child{
+    font-weight: bold;
+}
+
+.card{
+    background-color: #9AEFF4;
+}
+
+.cardColumn{
+    padding: 50px 0px 0px 0px;
+}
+
+.card-body div{
+    padding-top: 10px;
+}
