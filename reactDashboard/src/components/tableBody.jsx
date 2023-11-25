@@ -4,7 +4,7 @@ function tableBody() {
     return (
         <tbody>
             <tr>
-                <td scope="row" class="selector">
+                <td  class="selector">
                     <input class="form-check-input" type="checkbox" value="" id=""></input>
                 </td>
                 <td class="idNumber" >#AHGA68</td>
@@ -15,7 +15,7 @@ function tableBody() {
                 <td>0</td>
             </tr>
             <tr>
-                <td scope="row" class="selector">
+                <td  class="selector">
                     <input class="form-check-input" type="checkbox" value="" id=""></input>
                 </td>
                 <td class="idNumber" >#AHGA69</td>
@@ -26,7 +26,7 @@ function tableBody() {
                 <td>0</td>
             </tr>
             <tr>
-                <td scope="row" class="selector">
+                <td  class="selector">
                     <input class="form-check-input" type="checkbox" value="" id=""></input>
                 </td>
                 <td class="idNumber" >#AHGA70</td>
@@ -37,7 +37,7 @@ function tableBody() {
                 <td>0</td>
             </tr>
             <tr>
-                <td scope="row" class="selector">
+                <td  class="selector">
                     <input class="form-check-input" type="checkbox" value="" id=""></input>
                 </td>
                 <td class="idNumber" >#AHGA71</td>
@@ -48,7 +48,7 @@ function tableBody() {
                 <td>0</td>
             </tr>
             <tr>
-                <td scope="row" class="selector">
+                <td  class="selector">
                     <input class="form-check-input" type="checkbox" value="" id=""></input>
                 </td>
                 <td class="idNumber" >#AHGA72</td>
